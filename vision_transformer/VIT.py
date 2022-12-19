@@ -21,7 +21,7 @@ os.makedirs(logs_base_dir, exist_ok = True)
 
 exp = f"{logs_base_dir}/ex1"
 writer = SummaryWriter(exp)
-
+# 
 np.random.seed(0)
 torch.manual_seed(0)
 
