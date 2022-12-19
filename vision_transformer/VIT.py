@@ -44,7 +44,7 @@ class Embedding(nn.Module) :
     x = x + self.positional
     return x
 
-# temp = torch.arange(32*3*32*32, dtype = torch.float32).reshape(32, 3, 32, 32)
+# temp = torch.arange(32*3*32*32, dtype = torch.float32).reshape(32, 3, 32, 32) # 이미지를 패치 단위로 분할
 # emb = Embedding()
 # print(emb(temp).shape) # torch.Size([32, 65, 192])
 
