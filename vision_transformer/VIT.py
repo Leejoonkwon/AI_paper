@@ -137,7 +137,7 @@ class MLPHead(nn.Module) :
 
     self.feedforward = nn.Sequential(
         nn.Linear(input_dim, hidden_dim),
-        nn.GELU(),
+        nn.GELU(), # GELU는  dropout,zoneout의 특징을 가진 activation이다
         nn.Dropout(dropout),
         nn.Linear(hidden_dim, num_classes),
         nn.Dropout(dropout),)
