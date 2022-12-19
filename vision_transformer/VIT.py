@@ -12,6 +12,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from torchvision.transforms import ToTensor
 from torchvision.datasets.cifar import CIFAR100,CIFAR10
+from torchvision.datasets.mninst import MNIST
 from torchvision.datasets.imagenet import ImageNet
 from torchsummary import summary as summary
 import os
