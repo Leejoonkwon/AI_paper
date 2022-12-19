@@ -69,7 +69,7 @@ class MSA(nn.Module) :
     Ax = torch.einsum('bhan, bhnd -> bhad' ,A, v) 
     # b : batch size, h : num_heads, n : num_patches, a : num_patches, d : D_h
     return rearrange(Ax, 'b h n d -> b n (h d)')
-# temp = torch.zeros(32, 65, 192)
+# temp = torch.zeros(32, 65, 192) # 멀티헤드 셀프어텐션 구조 
 # print(MSA()(temp).shape) # torch.Size([32, 65, 192])
 
 
