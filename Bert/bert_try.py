@@ -3,7 +3,7 @@
 
 # import tensorflow as tf
 import torch
-
+# bert는 기본적으로 대용량 데이터로 학습된 pretrain model로 활용
 from transformers import BertTokenizer
 from transformers import BertForSequenceClassification, AdamW, BertConfig
 from transformers import get_linear_schedule_with_warmup
