@@ -34,6 +34,8 @@ import csv
 import pandas as pd
 
 # 11,876개의 한글 대화 문답 데이터(0,1,2 3가지 분류로 라벨링)
+# 2개의 라벨로 재분류 후 
+
 chatbot_data = pd.read_csv('D:/ChatbotData.csv', encoding="utf-8")
 print(chatbot_data.shape) # (11823, 3)
 print(chatbot_data.head())
