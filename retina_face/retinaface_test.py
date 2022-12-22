@@ -24,7 +24,7 @@ K = []
 for i in tqdm(file_name_list):
     retinaface2=RetinaFace.extract_faces(img_path=f"D:\\ai_data\study_data\\frame//{i}.jpg",align=True)
     K.append(retinaface2)
-
+# detect image가 복수형일 경우
 # for i in range(len(K)):
     
 #     for j in range(len(K[i])):
