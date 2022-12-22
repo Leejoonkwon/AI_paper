@@ -19,7 +19,7 @@ for i in range(len(file_list)):
 # print(file_name_list) #['01', '02', '03', '04', '05', '06']
 
 
-
+# face detect
 K = []
 for i in tqdm(file_name_list):
     retinaface2=RetinaFace.extract_faces(img_path=f"D:\\ai_data\study_data\\frame//{i}.jpg",align=True)
