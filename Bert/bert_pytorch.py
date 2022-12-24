@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
  
      
-
+# 옵션 고정
 config = Config({
     "n_enc_vocab": len(vocab),
     "n_enc_seq": 256,
