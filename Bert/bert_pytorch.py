@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
  
-   
+    
 
 config = Config({
     "n_enc_vocab": len(vocab),
