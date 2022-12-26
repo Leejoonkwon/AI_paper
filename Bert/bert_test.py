@@ -18,7 +18,7 @@ test_df = test_df.sample(frac=0.4, random_state=999)
 
 # print(train_df)
 # print(test_df)
-
+# 슬라이싱
 class NsmcDataset(Dataset):
     ''' Naver Sentiment Movie Corpus Dataset '''
     def __init__(self, df):
