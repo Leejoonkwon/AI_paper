@@ -6,7 +6,7 @@ from pytorch_transformers import BertTokenizer, BertForSequenceClassification, B
 from torch.optim import Adam
 import torch.nn.functional as F
 
-
+# 데이터 
 train_df = pd.read_csv('C:\\team_project\\nsmc/ratings_train.txt', sep='\t')
 test_df = pd.read_csv('C:\\team_project\\nsmc/ratings_test.txt', sep='\t')
 
